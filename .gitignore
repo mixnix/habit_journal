@@ -1,0 +1,57 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+
+
+### frontend
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/habit_journal_front/node_modules
+/habit_journal_front/.pnp
+habit_journal_front/.pnp.js
+
+# testing
+/habit_journal_front/coverage
+
+# production
+/habit_journal_front/build
+
+# misc
+/habit_journal_front/.DS_Store
+/habit_journal_front/.env.local
+/habit_journal_front/.env.development.local
+/habit_journal_front/.env.test.local
+/habit_journal_front/.env.production.local
+
+/habit_journal_front/npm-debug.log*
+/habit_journal_front/yarn-debug.log*
+/habit_journal_front/yarn-error.log*
