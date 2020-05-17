@@ -1,13 +1,25 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-const App = () => {
-    return (
-        <Router>
-            <Switch>
-                <Route path='/' exact={true} component={Home}/>
-            </Switch>
-        </Router>
-    );
-};
+class App extends React.Component {
+    render() {
+        return (
+            <div>
+                <h1>hello worldaaaaaaaaa</h1>
+            </div>
+        )
+    }
+}
 
-export default App;
+
+{/*<Router>*/}
+{/*    <Switch>*/}
+{/*        <Route path='/' exact={true} component={Home}/>*/}
+{/*    </Switch>*/}
+{/*</Router>*/}
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('react')
+);
