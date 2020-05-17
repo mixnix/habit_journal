@@ -17,6 +17,6 @@ public class ActivityCategory {
 
     private String title;
 
-    @OneToMany(mappedBy = "category")
+    @OneToMany
     private List<Activity> activities;
 }

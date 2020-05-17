@@ -23,4 +23,7 @@ public class Activity {
     private LocalDateTime startTime;
 
     private LocalDateTime endTime;
+
+    @ManyToOne
+    private ActivityCategory category;
 }
