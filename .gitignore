@@ -35,23 +35,23 @@ build/
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/habit_journal_front/node_modules
-/habit_journal_front/.pnp
-habit_journal_front/.pnp.js
+/src/main/js/node_modules
+/src/main/js/.pnp
+src/main/js/.pnp.js
 
 # testing
-/habit_journal_front/coverage
+/src/main/js/coverage
 
 # production
-/habit_journal_front/build
+/src/main/js/build
 
 # misc
-/habit_journal_front/.DS_Store
-/habit_journal_front/.env.local
-/habit_journal_front/.env.development.local
-/habit_journal_front/.env.test.local
-/habit_journal_front/.env.production.local
+/src/main/js/.DS_Store
+/src/main/js/.env.local
+/src/main/js/.env.development.local
+/src/main/js/.env.test.local
+/src/main/js/.env.production.local
 
-/habit_journal_front/npm-debug.log*
-/habit_journal_front/yarn-debug.log*
-/habit_journal_front/yarn-error.log*
+/src/main/js/npm-debug.log*
+/src/main/js/yarn-debug.log*
+/src/main/js/yarn-error.log*
