@@ -1,5 +1,6 @@
 package com.github.mixnix.habit_journal.domain.dao;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -19,4 +20,8 @@ public class ActivityCategory {
 
     @OneToMany
     private List<Activity> activities;
+
+    public ActivityCategory(String title) {
+        this.title = title;
+    }
 }
