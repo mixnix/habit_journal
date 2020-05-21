@@ -22,7 +22,7 @@ const Home = (props) => {
     const handleSubmit = async (values) => {
         await fetch('/api/activities', {
             method: 'POST',
-            body: values,
+            body: JSON.stringify(values),
             headers: {'Content-Type': 'application/json'}
         }).then((response) => {
             if(response.status === 200){
