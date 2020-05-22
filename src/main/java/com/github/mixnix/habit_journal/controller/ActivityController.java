@@ -43,6 +43,7 @@ public class ActivityController {
         return activityRepository.save(activity);
     }
 
+    // gets activities from given day, from 6 am of given day to 6 am next day
     @GetMapping("/by-day")
     public List<Activity> getActivitiesFromDay(@RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
                                                            LocalDate day){

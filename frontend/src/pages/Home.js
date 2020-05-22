@@ -2,6 +2,7 @@ import React from "react";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import MyTextInput from "../components/MyTextInput";
+import Navbar from "../components/Navbar";
 
 const Home = (props) => {
 
@@ -21,6 +22,7 @@ const Home = (props) => {
 
     return (
         <div className="container">
+            <Navbar/>
             <div className="row">
                 <div className="col-md-8 m-auto">
                     <Formik
