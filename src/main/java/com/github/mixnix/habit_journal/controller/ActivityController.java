@@ -7,9 +7,12 @@ import com.github.mixnix.habit_journal.repository.ActivityCategoryRepository;
 import com.github.mixnix.habit_journal.repository.ActivityRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -40,4 +43,11 @@ public class ActivityController {
         return activityRepository.save(activity);
     }
 
+    @GetMapping("/by-day")
+    public List<Activity> getActivitiesFromDay(@RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+                                                           LocalDate day){
+        LocalDateTime start = day.atTime(6,0);
+        LocalDateTime end = day.plusDays(1).atTime(6,0);
+        return activityRepository.getActivitiesByStartTimeAfterAndStartTimeBefore(start, end);
+    }
 }
